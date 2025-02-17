@@ -52,7 +52,7 @@ struct Extensions {
     pub webgl_compressed_texture_pvrtc: Option<web_sys::WebglCompressedTexturePvrtc>,
     pub webgl_compressed_texture_s3tc: Option<web_sys::WebglCompressedTextureS3tc>,
     pub webgl_compressed_texture_s3tc_srgb: Option<web_sys::WebglCompressedTextureS3tcSrgb>,
-    pub webgl_debug_renderer_info: Option<web_sys::WebglDebugRendererInfo>,
+    //pub webgl_debug_renderer_info: Option<web_sys::WebglDebugRendererInfo>,
     pub webgl_debug_shaders: Option<web_sys::WebglDebugShaders>,
     pub webgl_depth_texture: Option<web_sys::WebglDepthTexture>,
     pub webgl_draw_buffers: Option<web_sys::WebglDrawBuffers>,
@@ -215,10 +215,10 @@ macro_rules! build_extensions {
             >(
                 &$context, "WEBGL_compressed_texture_s3tc_srgb"
             ),
-            webgl_debug_renderer_info: get_extension::<web_sys::WebglDebugRendererInfo>(
-                &$context,
-                "WEBGL_debug_renderer_info",
-            ),
+            //webgl_debug_renderer_info: get_extension::<web_sys::WebglDebugRendererInfo>(
+            //    &$context,
+            //    "WEBGL_debug_renderer_info",
+            //),
             webgl_debug_shaders: get_extension::<web_sys::WebglDebugShaders>(
                 &$context,
                 "WEBGL_debug_shaders",
